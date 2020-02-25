@@ -728,21 +728,21 @@ footer {
       cursor: pointer;
       overflow: hidden;
       z-index: 1; }
-      footer .footer .social .fa {
+      footer .footer .social .fab {
         color: #fff;
         font-size: 2.5rem;
         position: absolute;
-        top: 1.8rem;
-        left: 2.5rem; }
-        footer .footer .social .fa:hover {
+        top: 2.3rem;
+        left: 2.1rem; }
+        footer .footer .social .fab:hover {
           opacity: 0.8; }
-      footer .footer .social .ion-social-facebook {
+      footer .footer .social .fa-facebook-f {
         left: 10rem; }
-      footer .footer .social .ion-social-twitter {
+      footer .footer .social .fa-twitter {
         left: 16.5rem; }
-      footer .footer .social .ion-social-googleplus {
+      footer .footer .social .fa-google-plus-g {
         left: 24rem; }
-      footer .footer .social .ion-social-instagram {
+      footer .footer .social .fa-instagram {
         left: 32.5rem; }
     footer .footer .media {
       transition: .5s; }

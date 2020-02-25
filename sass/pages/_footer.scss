@@ -44,12 +44,12 @@ footer {
             overflow: hidden;
             z-index: 1;
 
-            .fa {
+            .fab {
                 color:#fff;
                 font-size: 2.5rem;
                 position: absolute;
-                top: 1.8rem;
-                left: 2.5rem;
+                top: 2.3rem;
+                left: 2.1rem;
     
                 &:hover {
                     opacity: 0.8;
@@ -57,19 +57,19 @@ footer {
             }
             
 
-            .ion-social-facebook {
+            .fa-facebook-f {
                 left: 10rem;
             }
             
-            .ion-social-twitter {
+            .fa-twitter {
                 left: 16.5rem;
             }
             
-            .ion-social-googleplus {
+            .fa-google-plus-g {
                 left: 24rem;
             }
             
-            .ion-social-instagram {
+            .fa-instagram {
                 left: 32.5rem;
             }
         }
