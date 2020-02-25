@@ -1,0 +1,122 @@
+#contact-section {
+    position: relative; 
+    padding: 45rem 0; 
+
+    @include responnd(phone){
+        padding-top: 35rem;
+        padding-bottom: 25rem;
+    } 
+
+    .box-contact {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80rem;
+        height: 60rem;
+        background-image: linear-gradient(to right bottom, $color-pink-light, $color-pink-dark);
+        box-shadow: 0 .5rem 3rem rgba($black, .30);
+
+        @include responnd(tab-port-small) {
+            width: 60rem;
+            height: 40rem;
+        }
+
+        @include responnd(phone){ 
+            width: 45rem;
+            height: 40rem;   
+        }
+
+        .contact {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+            h2 {
+                color: #fff;
+                font-size: 4.6rem;
+                margin-bottom: 2rem;
+
+                @include responnd(tab-port-small) {
+                    font-size: 3.8rem;
+                    padding-bottom: 2.5rem;
+                }     
+            }
+        }
+
+        .form {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            &_label {
+                font-size: 1.4rem;
+                font-weight: 500;
+                margin-left: 2rem;
+                color: #fff;
+                letter-spacing: .1rem;
+                display: block;
+                transition: all .3s;
+            }
+
+            &_input:placeholder-shown + .form_label {
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(-4rem);
+            }
+
+            .radio-group {
+                width: 100%;
+                display: inline-block; 
+
+                input {
+                    width: 100%;
+                    margin: 2rem 0;
+                    color: #fff;
+                    font-size: 1.8rem;
+                    letter-spacing: .2rem;
+                    background: rgba(0, 0, 0, 0);
+                    border: none;
+                    border-bottom: .2rem solid #fff;
+                    transition: all .3s;
+
+                    @include responnd(tab-port-small) { 
+                        margin: 1rem 0;
+                    }
+
+                    &:focus {
+                        outline: none;
+                        box-shadow: 0 1rem 2rem rgba(black, .1);
+                        border-bottom: .2rem solid $color-pink-dark;
+                    }
+
+                    &:focus:invalid {
+                        border-bottom: .2rem solid  $color-pink-light;
+                    }
+                }
+
+                #msg { 
+                    @include responnd(tab-port-small) { 
+                        margin-top: 3rem;
+                    }
+                }    
+            }
+            
+            .radio-label {
+                font-size: 1.8rem;
+                cursor: pointer;
+                position: relative;
+                padding-left: 4.5rem;
+            }
+            
+        }
+    } 
+    ::-webkit-input-placeholder {
+        color: #fff;
+        font-size: 1.6rem;
+        letter-spacing: .2rem;
+    }
+}

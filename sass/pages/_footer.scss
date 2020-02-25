@@ -1,0 +1,128 @@
+footer {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 25rem;
+    background-image:  linear-gradient(to right bottom, 
+                    rgba($color-pink-light, 0.6), 
+                    rgba($color-pink-dark, 0.4)), 
+                    url(../img/a1.jpg);
+    background-size: cover;
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+
+        .design {
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding-top: 0;
+
+            p {
+                color: #fff;
+                font-weight: 700;
+                text-align: center;
+                margin-top: 1.5rem;
+            }
+        }
+
+        .social {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 7rem;
+            height: 7rem;
+            background: linear-gradient(to right bottom, $color-pink-light, $color-pink-dark);
+            border-radius: 100px;
+            cursor: pointer;
+            overflow: hidden;
+            z-index: 1;
+
+            .fa {
+                color:#fff;
+                font-size: 2.5rem;
+                position: absolute;
+                top: 1.8rem;
+                left: 2.5rem;
+    
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+            
+
+            .ion-social-facebook {
+                left: 10rem;
+            }
+            
+            .ion-social-twitter {
+                left: 16.5rem;
+            }
+            
+            .ion-social-googleplus {
+                left: 24rem;
+            }
+            
+            .ion-social-instagram {
+                left: 32.5rem;
+            }
+        }
+
+        .media {
+            transition: .5s;
+
+            &.expand {
+                width: 38rem;
+                height: 7rem;
+                border-radius: 100px;
+            }
+        }
+         
+    }
+
+    .wave {
+        position: absolute;
+        width: 100%;
+        height: 14.3em;
+        bottom: 0;
+        left: 0;
+        top: -0.5rem;
+        transform: rotate(180deg);
+        background: url(../img/wave.png);
+        animation: animate 10s linear infinite;
+
+
+        &::before {
+            content:'';
+            width: 100%;
+            height: 14.3em;
+            background: url(../img/wave.png);
+
+            position: absolute;
+            top: -0.5rem;
+            left: 0;
+            opacity: 0.4;
+            animation: animate-reverse 10s linear infinite;
+        }
+        
+        &::after {
+            content:'';
+            width: 100%;
+            height: 14.3em;
+            background: url(../img/wave.png);
+
+            position: absolute;
+            top: -0.5rem;
+            left: 0;
+            opacity: 0.6;
+            animation-delay: -5s;
+            animation: animate 20s linear infinite;
+        }
+    }
+}

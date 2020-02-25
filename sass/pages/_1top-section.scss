@@ -1,0 +1,124 @@
+.top-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, rgba($color-pink-light, 0.6), rgba($color-pink-dark, 0.4)), url(../img/aa.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    @include responnd(tab-port) {
+        background-image: linear-gradient(to right bottom, rgba($color-pink-light, 0.6), rgba($color-pink-dark, 0.4)), url(../img/aa-small.jpg);
+    }
+
+    .container-box {
+        padding: 0 100px;
+        min-height: 100vh;
+
+        .content-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 12rem;
+
+            .bannertext {
+                position: relative;
+                max-width: 50em;
+                margin-right: 5rem;
+
+                h2 {
+                    font-size: 5.4rem;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    line-height: 1.2em;
+                    color: #fff;
+                   
+                    @include responnd(phone) {
+                        font-size: 4.6rem;
+                    }
+                }
+
+                p {
+                    margin-top: 2rem;
+                    font-weight: 700;
+                    color: #fff;
+
+                    @include responnd(phone) {
+                        margin-top: 2.5rem;
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                    }
+                }
+                
+                button {
+                    font-weight: 700;
+
+                    @include responnd(phone) {
+                        margin-top: 2.5rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+
+    .wave {
+        position: absolute;
+        width: 100%;
+        height: 14.3em;
+        bottom: 0;
+        left: 0;
+        background: url(../img/wave.png);
+        animation: animate 10s linear infinite;
+
+
+        &::before {
+            content:'';
+            width: 100%;
+            height: 14.3em;
+            background: url(../img/wave.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.4;
+            animation: animate-reverse 10s linear infinite;
+        }
+        
+        &::after {
+            content:'';
+            width: 100%;
+            height: 14.3em;
+            background: url(../img/wave.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.6;
+            animation-delay: -5s;
+            animation: animate 20s linear infinite;
+        }
+    }
+}
+
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0;
+    }
+    100%
+    {
+       background-position: 136em;
+    }
+}
+
+
+@keyframes animate-reverse
+{
+    0%
+    {
+        background-position: 136em;
+    }
+    100%
+    {
+       background-position: 0;
+    }
+}

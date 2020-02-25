@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+@import "base/base";
+@import "base/button";
+@import "base/variables";
+
+
+@import "mediaqueries/queries";
+
+
+@import "pages/header";
+@import "pages/1top-section";
+@import "pages/2makeup-section";
+@import "pages/3greasepaint-section";
+@import "pages/4description-section";
+@import "pages/5video-section";
+@import "pages/6contact-section";
+@import "pages/footer";

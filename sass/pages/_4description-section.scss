@@ -1,0 +1,87 @@
+#description-section {
+    position: relative;
+    width: 100%;
+    padding: 5rem; 
+    padding-bottom: 15rem;  
+
+    .circle {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    } 
+
+    .circle1 {
+        width: 50rem;
+        height: 50rem;
+        float: left;
+        border-radius: 50%;
+        margin: 2rem;
+        shape-outside: circle();
+
+        @include responnd(tab-land) {
+            width: 40rem;
+            height: 40rem;
+        }
+
+        @include responnd(tab-land-small) {
+            width: 35rem;
+            height: 35rem;
+        }
+
+        @include responnd(phone) {
+            shape-outside: none;
+        }
+        
+    }
+    
+
+    .circle2 {
+        width: 30rem;
+        height: 30rem;
+        float: right;
+        border-radius: 50%;
+        margin: 2rem;
+        shape-outside: circle();
+
+        @include responnd(tab-land) {
+            width: 25rem;
+            height: 25rem;
+        }
+
+        @include responnd(tab-port-big) {
+            display: none;
+        }
+    }
+
+    h2 {
+        color: #333;
+        font-size: 3.5rem;
+        text-align: center;
+        padding: 2.5rem 0;
+
+        @include responnd(phone) {
+            font-size: 3rem;
+            padding-top: 40rem;
+        }
+
+    }
+
+    p {
+        color: #333;
+        text-align: justify;     
+    }
+
+    .text {
+        @include responnd(phone) {
+            display: none;
+        }
+    }
+}
