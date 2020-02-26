@@ -12,6 +12,10 @@ header {
         text-decoration: none;
         font-size: 3rem;
 
+        @include responnd(phone-small) {
+           font-size: 2rem;
+        }
+
         span {
             color: $color-pink-dark;
         } 

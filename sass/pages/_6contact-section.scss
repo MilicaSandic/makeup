@@ -19,12 +19,17 @@
 
         @include responnd(tab-port-small) {
             width: 60rem;
-            height: 40rem;
+            height: 45rem;
         }
 
         @include responnd(phone){ 
             width: 45rem;
-            height: 40rem;   
+            height: 45rem;   
+        }
+
+        @include responnd(phone-small){ 
+            width: 40rem;
+            height: 45rem;   
         }
 
         .contact {
@@ -42,7 +47,12 @@
                 @include responnd(tab-port-small) {
                     font-size: 3.8rem;
                     padding-bottom: 2.5rem;
-                }     
+                }  
+                
+                @include responnd(phone-small){ 
+                   font-size: 3rem;
+                }
+        
             }
         }
 

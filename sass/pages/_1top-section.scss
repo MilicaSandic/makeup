@@ -20,6 +20,12 @@
             align-items: center;
             margin-top: 12rem;
 
+            @include responnd(phone-small) {
+                margin-top: 8rem;
+
+            }
+
+
             .bannertext {
                 position: relative;
                 max-width: 50em;
@@ -35,6 +41,10 @@
                     @include responnd(phone) {
                         font-size: 4.6rem;
                     }
+                    
+                    @include responnd(phone-small) {
+                        font-size: 3.6rem;
+                    }
                 }
 
                 p {
@@ -46,6 +56,10 @@
                         margin-top: 2.5rem;
                         font-size: 1.6rem;
                         font-weight: 500;
+                    }
+
+                    @include responnd(phone-small) {
+                        font-size: 1.4rem;
                     }
                 }
                 
